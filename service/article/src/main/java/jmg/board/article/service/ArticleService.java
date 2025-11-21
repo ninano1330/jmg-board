@@ -8,7 +8,7 @@ import jmg.board.article.service.request.ArticleCreateRequest;
 import jmg.board.article.service.request.ArticleUpdateRequest;
 import jmg.board.article.service.response.ArticlePageResponse;
 import jmg.board.article.service.response.ArticleResponse;
-import kuke.board.common.snowflake.Snowflake;
+import jmg.board.common.snowflake.Snowflake;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -48,4 +48,14 @@ class CommentPathTest {
         assertThatThrownBy(() -> commentPath.createChildCommentPath("zzzzz"))
                 .isInstanceOf(IllegalStateException.class);
     }
+
+    @Test
+    void increase() {
+        String path = "0000000001";
+        final int DEPTH_CHUNK_SIZE = 5;
+        final int MAX_DEPTH = 5;
+
+        String lastChunk = path.substring(path.length() - DEPTH_CHUNK_SIZE);
+        System.out.println("lastChunk = " + lastChunk);
+    }
 }

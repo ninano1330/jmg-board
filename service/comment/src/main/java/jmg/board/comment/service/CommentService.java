@@ -5,7 +5,7 @@ import jmg.board.comment.repository.CommentRepository;
 import jmg.board.comment.service.request.CommentCreateRequest;
 import jmg.board.comment.service.response.CommentPageResponse;
 import jmg.board.comment.service.response.CommentResponse;
-import kuke.board.common.snowflake.Snowflake;
+import jmg.board.common.snowflake.Snowflake;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

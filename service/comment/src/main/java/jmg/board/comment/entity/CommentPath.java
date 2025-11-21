@@ -66,15 +66,16 @@ public class CommentPath {
     }
 
     private String increase(String path) {
+        // EX : 00000 00001 -> 00001
         String lastChunk = path.substring(path.length() - DEPTH_CHUNK_SIZE);
-        if (isChunkOverflowed(lastChunk)) {
+        if (isChunkOverflowed(lastChunk)) {   // zzzzz ?
             throw new IllegalStateException("chunk overflowed");
         }
 
         int charsetLength = CHARSET.length();
 
         int value = 0;
-        for (char ch : lastChunk.toCharArray()) {
+        for (char ch : lastChunk.toCharArray()) { // 0, 0, 0, 0, 1
             value = value * charsetLength + CHARSET.indexOf(ch);
         }
 

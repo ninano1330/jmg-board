@@ -3,7 +3,7 @@ package jmg.board.article.data;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jmg.board.article.entity.Article;
-import kuke.board.common.snowflake.Snowflake;
+import jmg.board.common.snowflake.Snowflake;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
